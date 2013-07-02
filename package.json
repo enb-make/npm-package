@@ -1,0 +1,33 @@
+{
+    "author" : "FirstName LastName <email@example.com>",
+    "description" : "Short package description",
+    "name" : "package-name",
+    "version" : "0.0.1",
+    "repository" : "https://github.com/user/package-name",
+    "contributors" : [
+        {
+            "name": "FirstName LastName",
+            "email": "email@example.com"
+        }
+    ],
+    "engines" : {
+        "node": ">= 0.8.0"
+    },
+    "dependencies" : {},
+    "devDependencies" : {
+        "jshint": "2.1.3",
+        "mocha": "1.11.0",
+        "jscs": "1.0.0"
+    },
+    "bin" : {
+        "package-bin" : "./bin/package-bin"
+    },
+    "scripts": {
+        "test" : "npm run-script jshint && npm run-script check-style && npm run-script unit-test",
+        "jshint": "./node_modules/.bin/jshint .",
+        "unit-test": "./node_modules/.bin/mocha -u bdd -R spec --recursive test",
+        "check-style": "./node_modules/jscs/bin/jscs .",
+        "lib-cov": "jscoverage lib lib-cov",
+        "coverage": "rm -Rf lib-cov && npm run-script lib-cov && COVERAGE=1 ./node_modules/.bin/mocha -u bdd -R html-cov --recursive test > coverage.html"
+    }
+}

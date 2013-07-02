@@ -1,0 +1,6 @@
+.git*
+test/
+.DS_Store
+lib-cov
+node_modules
+coverage.html
