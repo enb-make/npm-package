@@ -30,6 +30,6 @@
         "unit-test": "./node_modules/.bin/mocha -u bdd -R spec --recursive test",
         "check-style": "./node_modules/jscs/bin/jscs .",
         "lib-cov": "jscoverage lib lib-cov",
-        "coverage": "rm -Rf lib-cov && npm run-script lib-cov && COVERAGE=1 ./node_modules/.bin/mocha -u bdd -R html-cov --recursive test > coverage.html"
+        "coverage": "rm -Rf lib-cov && npm run-script lib-cov && PACKAGE_COVERAGE=1 ./node_modules/.bin/mocha -u bdd -R html-cov --recursive test > coverage.html"
     }
 }
