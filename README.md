@@ -6,5 +6,20 @@ This is an npm package stub.
 Creating new package:
 
 ```
-curl https://raw.github.com/enb-make/npm-package/master/init.sh | sh
+curl https://raw.github.com/enb-make/npm-package/master/install.sh | sh
 ```
+
+Includes:
+
+ * Readme.
+ * License.
+ * Contributing guide.
+ * Changelog.
+ * `jshint` config.
+ * `jscs` config.
+ * Base CLI implementation.
+ * `mocha` testing.
+ * Test coverage calculation.
+ * Travis integration.
+ * Base Makefile.
+ * Base `.gitignore`/`.npmignore`.
