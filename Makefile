@@ -22,7 +22,7 @@ lib-cov: clean
 
 .PHONY: coverage
 coverage: lib-cov
-	PACKAGE_COVERAGE=1 $(MOCHA) -u bdd --reporter mocha-istanbul
+	{{PackageNameUpperUnderscored}}_COVERAGE=1 $(MOCHA) -u bdd --reporter mocha-istanbul
 	@echo
 	@echo Open html-report/index.html file in your browser
 

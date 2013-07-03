@@ -1,3 +1,3 @@
-module.exports = process.env.PACKAGE_COVERAGE ?
+module.exports = process.env.{{PackageNameUpperUnderscored}} ?
     require('./lib-cov/hello-world') :
     require('./lib/hello-world');

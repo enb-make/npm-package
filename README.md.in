@@ -1,0 +1,39 @@
+{{PackageName}}
+===============
+
+Short info about your package.
+
+What does your package.
+
+Which limits has your package.
+
+Installation
+------------
+
+`{{PackageName}}` can be installed using `npm`:
+
+```
+npm install {{PackageName}}
+```
+
+Usage
+-----
+
+To run `{{PackageName}}`, you can use the following command from the project root:
+
+```
+./node_modules/.bin/{{PackageName}} path[ path[...]]
+```
+
+Example:
+
+```
+var HelloWorld = require('{{PackageName}}').HelloWorld;
+var helloWorld = new HelloWorld();
+console.log(helloWorld.calculate());
+```
+
+Configuration
+-------------
+
+Detailed information about your package configuration.

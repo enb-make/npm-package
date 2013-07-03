@@ -1,13 +1,12 @@
 {
-    "author" : "FirstName LastName <email@example.com>",
+    "author" : "{{FirstName}} {{LastName}} <{{Email}}>",
     "description" : "Short package description",
-    "name" : "package-name",
+    "name" : "{{PackageName}}",
     "version" : "0.0.1",
-    "repository" : "https://github.com/user/package-name",
     "contributors" : [
         {
-            "name": "FirstName LastName",
-            "email": "email@example.com"
+            "name": "{{FirstName}} {{LastName}}",
+            "email": "{{Email}}"
         }
     ],
     "engines" : {
@@ -24,7 +23,7 @@
         "mocha-istanbul": "*"
     },
     "bin" : {
-        "package-bin" : "./bin/package-bin"
+        "package-bin" : "./bin/{{PackageName}}"
     },
     "scripts": {
         "test" : "make validate",
