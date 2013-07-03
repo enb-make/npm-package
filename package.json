@@ -19,17 +19,17 @@
     "devDependencies" : {
         "jshint": "2.1.3",
         "mocha": "1.11.0",
-        "jscs": "1.0.0"
+        "jscs": "1.0.0",
+        "istanbul": "0.1.39",
+        "mocha-istanbul": "*"
     },
     "bin" : {
         "package-bin" : "./bin/package-bin"
     },
     "scripts": {
-        "test" : "npm run-script jshint && npm run-script check-style && npm run-script unit-test",
-        "jshint": "./node_modules/.bin/jshint .",
-        "unit-test": "./node_modules/.bin/mocha -u bdd -R spec --recursive test",
-        "check-style": "./node_modules/jscs/bin/jscs .",
-        "lib-cov": "jscoverage lib lib-cov",
-        "coverage": "rm -Rf lib-cov && npm run-script lib-cov && PACKAGE_COVERAGE=1 ./node_modules/.bin/mocha -u bdd -R html-cov --recursive test > coverage.html"
+        "test" : "make test",
+        "lint": "make lint",
+        "coverage": "make coverage",
+        "clean": "make clean"
     }
 }

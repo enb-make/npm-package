@@ -10,5 +10,9 @@
     "maxlen"   : 120,
     "indent"   : 4,
     "predef"   : ["describe", "it", "beforeEach"],
-    "quotmark" : "single"
+    "quotmark" : "single",
+    "maxerr": 5,
+    "maxdepth": 2,
+    "maxstatements": 12,
+    "maxcomplexity": 5
 }
