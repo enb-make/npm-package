@@ -85,4 +85,4 @@ function npm_generator() {
     rm -Rf "$TMP_INPUT_FOLDER"
 }
 
-`npm_generator`
+npm_generator
