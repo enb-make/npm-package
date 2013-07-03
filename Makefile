@@ -8,6 +8,9 @@ JSCS = $(BIN)/jscs
 test:
 	$(MOCHA) -u bdd -R spec --recursive
 
+.PHONY: validate
+validate: lint test
+
 .PHONY: clean
 clean:
 	-rm -rf lib-cov

@@ -27,7 +27,7 @@
         "package-bin" : "./bin/package-bin"
     },
     "scripts": {
-        "test" : "make test",
+        "test" : "make validate",
         "lint": "make lint",
         "coverage": "make coverage",
         "clean": "make clean"
