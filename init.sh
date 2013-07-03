@@ -50,7 +50,8 @@ function replace_consts {
             sed 's/{{PackageName}}/'"$PackageName"/ |
             sed 's/{{FirstName}}/'"$FirstName"/ |
             sed 's/{{LastName}}/'"$LastName"/ |
-            sed 's/{{Email}}/'"$Email"/
+            sed 's/{{Email}}/'"$Email"/ |
+            sed 's/{{Year}}/'"$Year"/
     done
 }
 
@@ -62,6 +63,7 @@ if [ -r "$OUTPUT_FOLDER" ]; then
 fi
 
 PackageNameUpperUnderscored=`echo "$PackageName" | tr "[:lower:]-" "[:upper:]_"`
+Year=`date +%Y`
 
 TMP_INPUT_FOLDER="/tmp/`date +%s`-npm-package"
 git clone "https://github.com/enb-make/npm-package.git" "$TMP_INPUT_FOLDER"
