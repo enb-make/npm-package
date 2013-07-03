@@ -44,7 +44,7 @@ while true; do
 done
 
 function replace_consts {
-    while read data; do
+    while read -e data; do
         echo "$data" |
             sed 's/{{PackageNameUpperUnderscored}}/'"$PackageNameUpperUnderscored"/ |
             sed 's/{{PackageName}}/'"$PackageName"/ |
