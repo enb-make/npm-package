@@ -84,4 +84,16 @@ find . | grep -v './.git' | while read FILENAME; do
     fi
 done
 
+cd "$OUTPUT_FOLDER"
+git init
+echo
+echo "Git repository initialized"
+
+npm install
+echo
+echo "NPM packages installed"
+
+echo
+echo "NPM package stub created: $OUTPUT_FOLDER"
+
 rm -Rf "$TMP_INPUT_FOLDER"
