@@ -50,6 +50,7 @@ function replace_consts {
             sed 's/{{PackageName}}/'"$PackageName"/ |
             sed 's/{{FirstName}}/'"$FirstName"/ |
             sed 's/{{LastName}}/'"$LastName"/ |
+            sed 's/{{Version}}/'"$Version"/ |
             sed 's/{{Email}}/'"$Email"/ |
             sed 's/{{Year}}/'"$Year"/
     done
