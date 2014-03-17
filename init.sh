@@ -13,6 +13,9 @@ while true; do
             printf "Enter Package Name: "
             read PackageName
 
+            printf "Enter Version Number: "
+            read Version
+
             printf "Enter your First Name: "
             read FirstName
 
