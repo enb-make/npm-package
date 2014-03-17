@@ -3,7 +3,7 @@ Contribution Guide
 
 This document describes some points about contribution process for {{PackageName}} package.
 
-The maintainer of the project is {{FirstName}} {{LastName}} ({{Email}}).
+The maintainer of the project is {{AuthorName}} ({{Email}}).
 
 The project is being developed within community. Maintainer merges pull-requests, fixes critical bugs.
 
