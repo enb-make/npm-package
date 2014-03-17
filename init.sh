@@ -73,7 +73,7 @@ mv "$TMP_INPUT_FOLDER"/README.md.in "$TMP_INPUT_FOLDER"/README.md
 echo
 echo "Generating npm package..."
 cd "$TMP_INPUT_FOLDER"
-find . | grep -v './.git' | while read FILENAME; do
+find . | grep -v './.git/' | while read FILENAME; do
     if [ -f "$FILENAME" ]; then
         FILENAME=`echo "$FILENAME" | sed 's/.\///'`
         RESULT_FILENAME=`echo "$FILENAME" | replace_consts`
