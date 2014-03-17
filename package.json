@@ -1,5 +1,5 @@
 {
-    "author" : "{{FirstName}} {{LastName}} <{{Email}}>",
+    "author" : "{{AuthorName}} <{{Email}}>",
     "description" : "Short package description",
     "name" : "{{PackageName}}",
     "version" : "{{Version}}",
