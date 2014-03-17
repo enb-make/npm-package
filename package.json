@@ -2,7 +2,7 @@
     "author" : "{{FirstName}} {{LastName}} <{{Email}}>",
     "description" : "Short package description",
     "name" : "{{PackageName}}",
-    "version" : "0.0.1",
+    "version" : "{{Version}}",
     "contributors" : [
         {
             "name": "{{FirstName}} {{LastName}}",
