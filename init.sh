@@ -16,11 +16,8 @@ while true; do
             printf "Enter Version Number: "
             read Version
 
-            printf "Enter your First Name: "
-            read FirstName
-
-            printf "Enter your Last Name: "
-            read LastName
+            printf "Enter your Name: "
+            read AuthorName
 
             printf "Enter your Email Address: "
             read Email
@@ -37,8 +34,8 @@ while true; do
 
     echo
     echo "Package Name: $PackageName"
-    echo "First Name: $FirstName"
-    echo "Last Name: $LastName"
+    echo "Package Version: $Version"
+    echo "Name: $AuthorName"
     echo "Email: $Email"
     echo
     printf "Generate npm package? [Y|N|X] "
@@ -51,8 +48,7 @@ function replace_consts {
         echo "$data" |
             sed 's/{{PackageNameUpperUnderscored}}/'"$PackageNameUpperUnderscored"/ |
             sed 's/{{PackageName}}/'"$PackageName"/ |
-            sed 's/{{FirstName}}/'"$FirstName"/ |
-            sed 's/{{LastName}}/'"$LastName"/ |
+            sed 's/{{AuthorName}}/'"$AuthorName"/ |
             sed 's/{{Version}}/'"$Version"/ |
             sed 's/{{Email}}/'"$Email"/ |
             sed 's/{{Year}}/'"$Year"/
